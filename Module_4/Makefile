@@ -17,3 +17,6 @@ lint: ## Lint the project using cargo
 fmt: ## Format the project using cargo
 	@rustup component add rustfmt 2> /dev/null
 	cargo fmt
+
+test: ## Test the project using cargo
+  	cargo test
