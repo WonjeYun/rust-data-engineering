@@ -22,4 +22,4 @@ fmt: ## Format the project using cargo
 	cargo fmt --quiet
 
 test: ## Test the project using cargo
-  	cargo test --quiet
+	cargo test --quiet
