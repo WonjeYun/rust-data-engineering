@@ -1,0 +1,13 @@
+[package]
+name = "cli-customize-fruit-salad"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.3.4", features = ["derive"] }
+csv = "1.1.6"
+rand = "0.8.5"
+
+[lib]
+name = "fruit_salad_maker"
+path = "src/lib.rs"

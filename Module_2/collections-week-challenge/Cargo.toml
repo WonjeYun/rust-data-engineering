@@ -1,7 +1,0 @@
-[package]
-name = "collections-week-challenge"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-petgraph = "0.6.3"

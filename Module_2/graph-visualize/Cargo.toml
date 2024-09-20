@@ -1,7 +1,0 @@
-[package]
-name = "graph-visualize"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-rasciigraph = "0.2.0"
