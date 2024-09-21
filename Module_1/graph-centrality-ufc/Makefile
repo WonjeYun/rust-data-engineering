@@ -7,11 +7,11 @@ help:
 clean: ## Clean the project using cargo
 	cargo clean
 
-build: ## Build the project using cargo
-	cargo build
-
 run: ## Run the project using cargo
 	cargo run
+
+build: ## Build the project using cargo
+	cargo build
 
 lint: ## Lint the project using cargo
 	@rustup component add clippy 2> /dev/null
