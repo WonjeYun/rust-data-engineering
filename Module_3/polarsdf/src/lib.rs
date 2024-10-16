@@ -4,7 +4,10 @@ use polars::prelude::*;
 
 //read in a csv file
 pub fn read_csv(path: &str) -> DataFrame {
-    CsvReader::from_path(path).unwrap().finish().unwrap()
+    let polars_df = CsvReadOptions::default()
+        .with_has_header(true)
+        .try_into_reader_with_file_path(Some(path.into())).expect("Unable to read file");
+    polars_df.finish().expect("Unable to read file")
 }
 
 //print "n" rows of a dataframe
